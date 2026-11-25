@@ -6,7 +6,7 @@ plop2's per-output idea applied to music. Each note of a melody is computed by i
 
 ```prolog
 ?- use_module(prolog/notewise).
-?- melody(0, major, [1,4,5,1], M).          % M = [60,65,74,60]: C major, I IV V I
+?- melody(0, major, [1,4,5,1], M).          % M = [60,69,74,60]: C major, I IV V I (C, then the third of IV, A, the fifth of V, D, and C)
 ?- note(0, major, [1,4,5,1], 2, N).         % N = 74: the third note alone
 ?- scale(9, minor, S).                      % A minor
 ?- depends_on(2, D).                        % D = [key, mode, chord(2), beat(2)]

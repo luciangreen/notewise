@@ -2,7 +2,7 @@
 % own small function from only what it needs: the key, the mode, the chord on that beat and the
 % beat number. So a note can be regenerated alone, and changing one chord changes only its notes.
 % Pitches are MIDI numbers; chords are scale degrees 1..7; the melody walks root, third, fifth.
-%?- melody(0, major, [1,4,5,1], M).          % M = [60,65,74,60]: C major, I IV V I
+%?- melody(0, major, [1,4,5,1], M).          % M = [60,69,74,60]: C major, I IV V I (C, then the third of IV, A, the fifth of V, D, and C)
 %?- note(0, major, [1,4,5,1], 2, N).         % N = 74: the third note alone
 %?- scale(9, minor, S).                      % A minor
 %?- depends_on(2, D).                        % D = [key, mode, chord(2), beat(2)]
